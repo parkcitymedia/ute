@@ -1,0 +1,126 @@
+{
+    "tile_id": "",
+    "tile_center": "5",
+    "tile_edges": [
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": ""
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": ""
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": ""
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": ""
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": ""
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": ""
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
