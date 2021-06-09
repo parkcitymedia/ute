@@ -25,61 +25,133 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
 ## examples
 
 #### single tile input
-- example can be found in `tile.json` for data input.
-- `tile.json`
+- example can be found in `tile_example.json` for data input.
+- `tile_example.json`
     ```json
     {
-        "tile_id":"",
+        "tile_id": "",
         "tile_center": "5",
-        "tile_edges": {
-            "edge_a": {
-                "is_open": true,
-                "tag": {
-                    "tag_1": "a",
-                    "tag_2": "b",
-                    "tag_3": "c"
+        "tile_edges": [
+            {
+                "tile_edge": {
+                    "is_open": true,
+                    "name": "a",
+                    "edge_tag": [
+                        {
+                            "tag_position": "0",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "1",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "2",
+                            "tag_value": ""
+                        }
+                    ]
                 }
             },
-            "edge_b": {
-                "is_open": false,
-                "tag": {
-                    "tag_1": "a",
-                    "tag_2": "d",
-                    "tag_3": "b"
+            {
+                "tile_edge": {
+                    "is_open": true,
+                    "name": "a",
+                    "edge_tag": [
+                        {
+                            "tag_position": "0",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "1",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "2",
+                            "tag_value": ""
+                        }
+                    ]
                 }
             },
-            "edge_c": {
-                "is_open": false,
-                "tag": {
-                    "tag_1": "c",
-                    "tag_2": "b",
-                    "tag_3": "b"
+            {
+                "tile_edge": {
+                    "is_open": true,
+                    "name": "a",
+                    "edge_tag": [
+                        {
+                            "tag_position": "0",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "1",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "2",
+                            "tag_value": ""
+                        }
+                    ]
                 }
             },
-            "edge_d": {
-                "is_open": true,
-                "tag": {
-                    "tag_1": "c",
-                    "tag_2": "d",
-                    "tag_3": "c"
+            {
+                "tile_edge": {
+                    "is_open": true,
+                    "name": "a",
+                    "edge_tag": [
+                        {
+                            "tag_position": "0",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "1",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "2",
+                            "tag_value": ""
+                        }
+                    ]
                 }
             },
-            "edge_e": {
-                "is_open": false,
-                "tag": {
-                    "tag_1": "b",
-                    "tag_2": "f",
-                    "tag_3": "f"
+            {
+                "tile_edge": {
+                    "is_open": true,
+                    "name": "a",
+                    "edge_tag": [
+                        {
+                            "tag_position": "0",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "1",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "2",
+                            "tag_value": ""
+                        }
+                    ]
                 }
             },
-            "edge_f": {
-                "is_open": false,
-                "tag": {
-                    "tag_1": "a",
-                    "tag_2": "f",
-                    "tag_3": "c"
+            {
+                "tile_edge": {
+                    "is_open": true,
+                    "name": "a",
+                    "edge_tag": [
+                        {
+                            "tag_position": "0",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "1",
+                            "tag_value": ""
+                        },
+                        {
+                            "tag_position": "2",
+                            "tag_value": ""
+                        }
+                    ]
                 }
             }
-        }
+        ]
     }
     ```
