@@ -24,7 +24,7 @@ struct Edge {
     tile_edge: EdgeValue,
 }
 
-/// Tile is a struct of Strings "tile_id" and "tile_center", as well as a "tile_edges" Vec<Edge>
+/// struct holds `tile_id: String`, `tile_center: string`, `tile_edges: Vec<Edge>` 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct Tile {
     /// Retrieved with global function identify_tile()
@@ -36,9 +36,10 @@ struct Tile {
 }
 
 
-///  takes in a mutable Tile ref (tile: &Tile) and  returns a (String) with a 
-///  new "tile_id" value based on the tile field information. EXAMPLE:
-///  identify_tile(tile) -> tile (it now has a tile_id)
+///  mutably borrows a Tile (tile: &Tile) and  returns a (tile: Tile) with a 
+///  new "tile_id" value based on the tile field information. 
+/// #### EXAMPLE:
+/// ```identify_tile(tile)``` returns -> `tile` (now with non-empty `tile_id` field)
 
 fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>> {
     
