@@ -1,6 +1,7 @@
 extern crate serde_json;
 extern crate tokio;
 
+
 use serde::{Deserialize, Serialize};
 
 /// holds a tag_position: String, and a tag_value: String
@@ -39,35 +40,23 @@ struct Tile {
 ///  takes in a mutable Tile ref (tile: &Tile) and  returns a (String) with a 
 ///  new "tile_id" value based on the tile field information. EXAMPLE:
 ///  identify_tile(tile) -> tile (it now has a tile_id)
-
 fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>> {
     
     println!("identifying tile...");
 
-    //let tile_id_string: String;
-    let mut id_vec: Vec<char> = Vec::new();
-    let char_1: String = tile.tile_center.chars().into_iter().collect();
-    let char_1: Vec<char> = char_1.chars().collect();
-    let char_1: char = char_1[0];
     // send the "center_value" character to the vec
+    let mut id_vec: Vec<char> = Vec::new();
+    let char_1: char = tile.tile_center.chars().into_iter().next().expect("string's empty...");
     id_vec.push(char_1);
-    //println!("center_value vec: {:#?}", &id_vec[0]);
 
     for edge in tile.tile_edges.iter() {
         
-        if edge.tile_edge.is_open == false {
-            id_vec.push('0');
-        } else {
-            id_vec.push('1');
-        }
+        let is_open_bit: char = if edge.tile_edge.is_open == false {'0'} else {'1'};
+        id_vec.push(is_open_bit);
 
         for tag_position in edge.tile_edge.edge_tag.iter() {
 
-            let mut tag_position_vec: Vec<char> = Vec::new();
-            let tag_value_char: String = tag_position.tag_value.chars().into_iter().collect();
-            let tag_value_char: char = tag_value_char.slice_unchecked(0, 1);
-            tag_position_vec.push();
-            let tag_value_char: char = &tag_value_char[0];
+            let tag_value_char: char = tag_position.tag_value.chars().next().expect("idk wtf happened here but rustc dosen't like it");
             id_vec.push(tag_value_char);
 
         }
@@ -76,12 +65,9 @@ fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>> {
     // result out the new tile (now with id, $2.99
     // call now for your free consultation!)
     let tile_id_string: String = id_vec.into_iter().collect();
-    //println!("id string: {}", tile_id_string);
     tile.tile_id = tile_id_string;
 
-    let tile: Tile = tile.clone();
-
-    Ok(tile)
+    Ok(tile.clone())
 }
 
 /// # main()
