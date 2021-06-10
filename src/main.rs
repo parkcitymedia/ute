@@ -25,7 +25,7 @@ struct Edge {
     tile_edge: EdgeValue,
 }
 
-/// Tile is a struct of Strings "tile_id" and "tile_center", as well as a "tile_edges" Vec<Edge>
+/// struct holds `tile_id: String`, `tile_center: string`, `tile_edges: Vec<Edge>` 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct Tile {
     /// Retrieved with global function identify_tile()
