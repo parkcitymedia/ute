@@ -157,4 +157,4 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
     ```
 
 ## external documentation
-~~[docs.rs](#)~~ <- LINK CURRENTLY BROKEN
+\<wip>
