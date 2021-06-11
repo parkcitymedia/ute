@@ -39,15 +39,15 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
                     "edge_tag": [
                         {
                             "tag_position": "0",
-                            "tag_value": ""
+                            "tag_value": "r"
                         },
                         {
                             "tag_position": "1",
-                            "tag_value": ""
+                            "tag_value": "q"
                         },
                         {
                             "tag_position": "2",
-                            "tag_value": ""
+                            "tag_value": "p"
                         }
                     ]
                 }
@@ -59,15 +59,15 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
                     "edge_tag": [
                         {
                             "tag_position": "0",
-                            "tag_value": ""
+                            "tag_value": "o"
                         },
                         {
                             "tag_position": "1",
-                            "tag_value": ""
+                            "tag_value": "n"
                         },
                         {
                             "tag_position": "2",
-                            "tag_value": ""
+                            "tag_value": "m"
                         }
                     ]
                 }
@@ -79,15 +79,15 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
                     "edge_tag": [
                         {
                             "tag_position": "0",
-                            "tag_value": ""
+                            "tag_value": "l"
                         },
                         {
                             "tag_position": "1",
-                            "tag_value": ""
+                            "tag_value": "k"
                         },
                         {
                             "tag_position": "2",
-                            "tag_value": ""
+                            "tag_value": "j"
                         }
                     ]
                 }
@@ -99,15 +99,15 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
                     "edge_tag": [
                         {
                             "tag_position": "0",
-                            "tag_value": ""
+                            "tag_value": "i"
                         },
                         {
                             "tag_position": "1",
-                            "tag_value": ""
+                            "tag_value": "h"
                         },
                         {
                             "tag_position": "2",
-                            "tag_value": ""
+                            "tag_value": "g"
                         }
                     ]
                 }
@@ -119,15 +119,15 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
                     "edge_tag": [
                         {
                             "tag_position": "0",
-                            "tag_value": ""
+                            "tag_value": "f"
                         },
                         {
                             "tag_position": "1",
-                            "tag_value": ""
+                            "tag_value": "e"
                         },
                         {
                             "tag_position": "2",
-                            "tag_value": ""
+                            "tag_value": "d"
                         }
                     ]
                 }
@@ -139,15 +139,15 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
                     "edge_tag": [
                         {
                             "tag_position": "0",
-                            "tag_value": ""
+                            "tag_value": "c"
                         },
                         {
                             "tag_position": "1",
-                            "tag_value": ""
+                            "tag_value": "b"
                         },
                         {
                             "tag_position": "2",
-                            "tag_value": ""
+                            "tag_value": "a"
                         }
                     ]
                 }
