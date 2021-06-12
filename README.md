@@ -9,14 +9,12 @@ pantsemm - polygons of arbitrary number of tagged sides engine for matching and 
 - [including in your project](#including-in-your-project)
 
 [examples](#examples)
+- [using handmade tiles](#using-handmade-tiles)
 - [single tile input](#single-tile-input)
 
 [features](#features)
 
 ## using pantsemm
- <sub>[[top]](#navigation)</sub>
-
-
 #### including in your project
  <sub>[[top]](#navigation)</sub>
 
@@ -32,12 +30,49 @@ pantsemm = {git = "https://github.com/parkcitymedia/pantsemm", branch="main"}
 
 
 ## examples
+#### using handmade tiles
  <sub>[[top]](#navigation)</sub>
+
+assuming tile path "`tile.json`" [has been made](#single-tile-input)/exists:
+- ##### map json to a tile (serde)
+ <sub>[[top]](#navigation)</sub>
+```rust
+// likely your main.rs:
+use pantsemm::{Tile, identify_tile};
+use serde_json::{from_str};
+use std::fs::read_to_string;
+
+#[tokio::main] // requires tokio = {features = ["full"]}
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    
+    // where does the tile live?
+    let raw_tile_path: &str = "tile.json";
+    
+    // read the tile info into a String (re-borrow
+    // into &str for serde_json compatibility)
+    let tile_r: String = read_to_string(raw_tile_path).unwrap();
+    let tile_r: &str = &tile_r;
+
+    // use serde_json::from_str() to
+    // map the json string to a pantsemm::Tile
+    let mut tile: Tile = from_str(tile_r)?;
+    
+    // generate a unique tile-data-based tile name
+    // with pantsemm's pantsemm::identify_tile()
+    // (returns a Tile!!!)
+    tile = identify_tile(&mut tile)?;
+
+    // print the tile_id out after generating it!
+    println!("my new tile id: {:#?}", tile.tile_id);
+
+    Ok(())
+}
+```
 
 #### single tile input
  <sub>[[top]](#navigation)</sub>
 
-- example can be found in `tiles/tile_example.json`[[view]] for data input.
+- example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.json) for data input.
 - `tile_example.json`
     ```json
     {

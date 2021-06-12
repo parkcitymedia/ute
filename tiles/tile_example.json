@@ -1,0 +1,126 @@
+{
+    "tile_id": "",
+    "tile_center": "clover",
+    "tile_edges": [
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "r"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "q"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "p"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "o"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "n"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "m"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "l"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "k"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "j"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "i"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "h"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "g"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "f"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "e"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "d"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "c"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "b"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "a"
+                    }
+                ]
+            }
+        }
+    ]
+}

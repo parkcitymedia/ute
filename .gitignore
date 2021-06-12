@@ -1,5 +1,3 @@
 /target
 Cargo.lock
-tile.json
 *.code-workspace
-tiles/
