@@ -1,31 +1,43 @@
-# PANTSEMM
-<h6><Sub><i>( pænts · em )</i></sub></h6>
-pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching and manipulation (in rust)
+# PANTSEMM <Sub><i>( pænts · em )</i></sub>
+
+pantsemm - polygons of arbitrary number of tagged sides engine for matching and manipulation (in rust)
 
 ## navigation
-[installation](#installation)
-- [dependencies](#dependencies)
-- [building from source](#building-from-source)
+ <sub>[[you're here]](#navigation)</sub>
+
+[using pantsemm](#using-pantsemm)
+- [including in your project](#including-in-your-project)
 
 [examples](#examples)
 - [single tile input](#single-tile-input)
 
-## installation
+[features](#features)
 
-#### dependencies
-- rust
-- cargo (comes with rust)
+## using pantsemm
+ <sub>[[top]](#navigation)</sub>
 
-#### building from source
-- clone repo
-- change dir into repo
-- execute a `cargo run` in the directory
-  - default output binary gets tossed into target/debug/\<binary>
+
+#### including in your project
+ <sub>[[top]](#navigation)</sub>
+
+- add this repo* to your `Cargo.toml`:
+```toml
+[dependencies]
+
+# ... other deps are probably here ...
+
+pantsemm = {git = "https://github.com/parkcitymedia/pantsemm", branch="main"}
+```
+<sub>*cargo searches by default for a "master" branch, so branch specification may/may not be necessary. </sub>
+
 
 ## examples
+ <sub>[[top]](#navigation)</sub>
 
 #### single tile input
-- example can be found in `tile_example.json` for data input.
+ <sub>[[top]](#navigation)</sub>
+
+- example can be found in `tiles/tile_example.json`[[view]] for data input.
 - `tile_example.json`
     ```json
     {
@@ -155,6 +167,5 @@ pantsemm_rs - polygons of arbitrary number of tagged sides engine for matching a
         ]
     }
     ```
-
-## external documentation
-\<wip>
+## references
+- [Rust By Example: Struct Visibility](https://doc.rust-lang.org/rust-by-example/mod/struct_visibility.html)
