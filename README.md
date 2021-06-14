@@ -14,7 +14,7 @@ ute - polygons of arbitrary number of tagged sides engine for matching and manip
 
 [features](#features)
 
-## using pantsemm
+## using ute
 #### including in your project
  <sub>[[top]](#navigation)</sub>
 
@@ -31,7 +31,6 @@ ute = {git = "https://github.com/parkcitymedia/ute", branch="main"}
 
 ## examples
 #### using handmade or generated tiles
- <sub>[[top]](#navigation)</sub>
 
 assuming tile path "`tile.json`" [has been made](#single-tile-input)/exists:
 - ##### map json to a tile (serde)
