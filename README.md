@@ -5,7 +5,7 @@ ute - polygons of arbitrary number of tagged sides engine for matching and manip
 ## navigation
  <sub>[[you're here]](#navigation)</sub>
 
-[using pantsemm](#using-pantsemm)
+[using ute](#using-ute)
 - [including in your project](#including-in-your-project)
 
 [examples](#examples)
@@ -24,7 +24,7 @@ ute - polygons of arbitrary number of tagged sides engine for matching and manip
 
 # ... other deps are probably here ...
 
-pantsemm = {git = "https://github.com/parkcitymedia/ute", branch="main"}
+ute = {git = "https://github.com/parkcitymedia/ute", branch="main"}
 ```
 <sub>*cargo searches by default for a "master" branch, so branch specification may/may not be necessary. </sub>
 
@@ -38,7 +38,7 @@ assuming tile path "`tile.json`" [has been made](#single-tile-input)/exists:
  <sub>[[top]](#navigation)</sub>
 ```rust
 // likely your main.rs:
-use pantsemm::{Tile, identify_tile};
+use ute::{Tile, identify_tile};
 use serde_json::{from_str};
 use std::fs::read_to_string;
 
