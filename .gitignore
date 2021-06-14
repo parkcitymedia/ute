@@ -1,3 +1,4 @@
 /target
 Cargo.lock
-*.code-workspace
+./*.code-workspace
+pantsemm_rs.code-workspace
