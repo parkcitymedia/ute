@@ -79,7 +79,6 @@ pub fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>
 }
 
 /// tile generation tools.
-#[cfg(feature = "generate")]
 pub mod generate {
 
     use std::io::{stdin,stdout,Write};
@@ -89,6 +88,8 @@ pub mod generate {
         let mut side_input: String = String::new();
         println!("number of sides:");
         stdin().read_line(&mut side_input).expect("nope. bad string. don't like it.");
+
+        println!("typed {}",side_input);
 
         
     }
