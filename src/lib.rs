@@ -1,5 +1,4 @@
 use serde::{Deserialize, Serialize};
-
 /// holds a tag_position: String, and a tag_value: String
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct TagPosition {
@@ -79,10 +78,19 @@ pub fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>
     Ok(tile.clone())
 }
 
+/// tile generation tools.
+#[cfg(feature = "generate")]
 pub mod generate {
 
+    use std::io::{stdin,stdout,Write};
+
+    /// generate a polygon of n (`side_input`) sides
     pub fn custom_polygon() {
-        unimplemented!();
+        let mut side_input: String = String::new();
+        println!("number of sides:");
+        stdin().read_line(&mut side_input).expect("nope. bad string. don't like it.");
+
+        
     }
 
     pub fn triangle() {

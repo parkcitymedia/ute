@@ -1,6 +1,6 @@
-# PANTSEMM <Sub><i>( pænts · em )</i></sub>
+# UTE <Sub><i>( yoot )</i></sub>
 
-pantsemm - polygons of arbitrary number of tagged sides engine for matching and manipulation (in rust)
+ute - polygons of arbitrary number of tagged sides engine for matching and manipulation (in rust)
 
 ## navigation
  <sub>[[you're here]](#navigation)</sub>
@@ -24,13 +24,13 @@ pantsemm - polygons of arbitrary number of tagged sides engine for matching and 
 
 # ... other deps are probably here ...
 
-pantsemm = {git = "https://github.com/parkcitymedia/pantsemm", branch="main"}
+pantsemm = {git = "https://github.com/parkcitymedia/ute", branch="main"}
 ```
 <sub>*cargo searches by default for a "master" branch, so branch specification may/may not be necessary. </sub>
 
 
 ## examples
-#### using handmade tiles
+#### using handmade or generated tiles
  <sub>[[top]](#navigation)</sub>
 
 assuming tile path "`tile.json`" [has been made](#single-tile-input)/exists:
@@ -55,11 +55,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // use serde_json::from_str() to
     // map the json string to a pantsemm::Tile
+    // note: this tile is mutable - while they don't
+    // need to be, this is good for when
+    // you want to change tile field values later
     let mut tile: Tile = from_str(tile_r)?;
     
     // generate a unique tile-data-based tile name
     // with pantsemm's pantsemm::identify_tile()
-    // (returns a Tile!!!)
+    // (returns a Tile!!! common use: mutation)
     tile = identify_tile(&mut tile)?;
 
     // print the tile_id out after generating it!
@@ -204,3 +207,4 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     ```
 ## references
 - [Rust By Example: Struct Visibility](https://doc.rust-lang.org/rust-by-example/mod/struct_visibility.html)
+- [Rust Forum: how to get user input](https://users.rust-lang.org/t/how-to-get-user-input/5176)
