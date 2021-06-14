@@ -5,6 +5,8 @@ ute - engine for matching and manipulating n-sided polygons with tagged sides (i
 ## navigation
  <sub>[[you're here]](#navigation)</sub>
 
+this page is a brief how-to-use overview. for detailed examples and faqs, read the [wiki](https://github.com/parkcitymedia/ute/wiki)
+
 [using ute](#using-ute)
 - [including in your project](#including-in-your-project)
 
@@ -13,6 +15,7 @@ ute - engine for matching and manipulating n-sided polygons with tagged sides (i
 - [single tile input](#single-tile-input)
 
 [features](#features)
+[references](#references)
 
 ## using ute
 #### including in your project
@@ -164,6 +167,14 @@ here's an example quad/square to look at right now: `quad_example.json`
     ]
 }
 ```
+## features
+ <sub>[[top]](#navigation)</sub>
+
+
+
 ## references
+ <sub>[[top]](#navigation)</sub>
+
 - [Rust By Example: Struct Visibility](https://doc.rust-lang.org/rust-by-example/mod/struct_visibility.html)
 - [Rust Forum: how to get user input](https://users.rust-lang.org/t/how-to-get-user-input/5176)
+- [The Cargo Book: Features](https://doc.rust-lang.org/cargo/reference/features.html)
