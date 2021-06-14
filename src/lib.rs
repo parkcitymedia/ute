@@ -78,3 +78,35 @@ pub fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>
 
     Ok(tile.clone())
 }
+
+pub mod generate {
+
+    pub fn custom_polygon() {
+        unimplemented!();
+    }
+
+    pub fn triangle() {
+        unimplemented!();
+    }
+
+    pub fn quadagon() {
+        unimplemented!();
+    }
+
+    pub fn pentagon() {
+        unimplemented!();
+    }
+
+    pub fn hexagon() {
+        unimplemented!();
+    }
+
+    pub fn septagon() {
+        unimplemented!();
+    }
+    
+    pub fn octagon() {
+        unimplemented!();
+    }
+
+}
