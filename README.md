@@ -176,5 +176,6 @@ here's an example quad/square to look at right now: `quad_example.json`
  <sub>[[top]](#navigation)</sub>
 
 - [Rust By Example: Struct Visibility](https://doc.rust-lang.org/rust-by-example/mod/struct_visibility.html)
-- [Rust Forum: how to get user input](https://users.rust-lang.org/t/how-to-get-user-input/5176)
 - [The Cargo Book: Features](https://doc.rust-lang.org/cargo/reference/features.html)
+- [The Cargo Book: Specifying Dependencies](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
+- [Rust Forum: how to get user input](https://users.rust-lang.org/t/how-to-get-user-input/5176)
