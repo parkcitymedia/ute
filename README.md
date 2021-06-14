@@ -75,136 +75,136 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #### single tile input
  <sub>[[top]](#navigation)</sub>
 
-- example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.json) for data input.
-- `tile_example.json`
-    ```json
-    {
-        "tile_id": "",
-        "tile_center": "5",
-        "tile_edges": [
-            {
-                "tile_edge": {
-                    "is_open": true,
-                    "name": "a",
-                    "edge_tag": [
-                        {
-                            "tag_position": "0",
-                            "tag_value": "r"
-                        },
-                        {
-                            "tag_position": "1",
-                            "tag_value": "q"
-                        },
-                        {
-                            "tag_position": "2",
-                            "tag_value": "p"
-                        }
-                    ]
-                }
-            },
-            {
-                "tile_edge": {
-                    "is_open": true,
-                    "name": "a",
-                    "edge_tag": [
-                        {
-                            "tag_position": "0",
-                            "tag_value": "o"
-                        },
-                        {
-                            "tag_position": "1",
-                            "tag_value": "n"
-                        },
-                        {
-                            "tag_position": "2",
-                            "tag_value": "m"
-                        }
-                    ]
-                }
-            },
-            {
-                "tile_edge": {
-                    "is_open": true,
-                    "name": "a",
-                    "edge_tag": [
-                        {
-                            "tag_position": "0",
-                            "tag_value": "l"
-                        },
-                        {
-                            "tag_position": "1",
-                            "tag_value": "k"
-                        },
-                        {
-                            "tag_position": "2",
-                            "tag_value": "j"
-                        }
-                    ]
-                }
-            },
-            {
-                "tile_edge": {
-                    "is_open": true,
-                    "name": "a",
-                    "edge_tag": [
-                        {
-                            "tag_position": "0",
-                            "tag_value": "i"
-                        },
-                        {
-                            "tag_position": "1",
-                            "tag_value": "h"
-                        },
-                        {
-                            "tag_position": "2",
-                            "tag_value": "g"
-                        }
-                    ]
-                }
-            },
-            {
-                "tile_edge": {
-                    "is_open": true,
-                    "name": "a",
-                    "edge_tag": [
-                        {
-                            "tag_position": "0",
-                            "tag_value": "f"
-                        },
-                        {
-                            "tag_position": "1",
-                            "tag_value": "e"
-                        },
-                        {
-                            "tag_position": "2",
-                            "tag_value": "d"
-                        }
-                    ]
-                }
-            },
-            {
-                "tile_edge": {
-                    "is_open": true,
-                    "name": "a",
-                    "edge_tag": [
-                        {
-                            "tag_position": "0",
-                            "tag_value": "c"
-                        },
-                        {
-                            "tag_position": "1",
-                            "tag_value": "b"
-                        },
-                        {
-                            "tag_position": "2",
-                            "tag_value": "a"
-                        }
-                    ]
-                }
+example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.json) for data input.
+`tile_example.json`
+```json
+{
+    "tile_id": "",
+    "tile_center": "5",
+    "tile_edges": [
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "r"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "q"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "p"
+                    }
+                ]
             }
-        ]
-    }
-    ```
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "o"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "n"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "m"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "l"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "k"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "j"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "i"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "h"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "g"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "f"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "e"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "d"
+                    }
+                ]
+            }
+        },
+        {
+            "tile_edge": {
+                "is_open": true,
+                "name": "a",
+                "edge_tag": [
+                    {
+                        "tag_position": "0",
+                        "tag_value": "c"
+                    },
+                    {
+                        "tag_position": "1",
+                        "tag_value": "b"
+                    },
+                    {
+                        "tag_position": "2",
+                        "tag_value": "a"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
 ## references
 - [Rust By Example: Struct Visibility](https://doc.rust-lang.org/rust-by-example/mod/struct_visibility.html)
 - [Rust Forum: how to get user input](https://users.rust-lang.org/t/how-to-get-user-input/5176)
