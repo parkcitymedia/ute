@@ -75,8 +75,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #### single tile input
  <sub>[[top]](#navigation)</sub>
 
-example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.json) for data input.
-`tile_example.json`
+an example can be found in `tiles/tile_example.json`of a handwritten/generated hexagon for data input.
+here's an example quad/square to look at right now: `quad_example.json`
 ```json
 {
     "tile_id": "",
@@ -85,7 +85,7 @@ example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.jso
         {
             "tile_edge": {
                 "is_open": true,
-                "name": "a",
+                "name": "top_edge",
                 "edge_tag": [
                     {
                         "tag_position": "0",
@@ -105,7 +105,7 @@ example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.jso
         {
             "tile_edge": {
                 "is_open": true,
-                "name": "a",
+                "name": "right_edge",
                 "edge_tag": [
                     {
                         "tag_position": "0",
@@ -125,7 +125,7 @@ example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.jso
         {
             "tile_edge": {
                 "is_open": true,
-                "name": "a",
+                "name": "bottom_edge",
                 "edge_tag": [
                     {
                         "tag_position": "0",
@@ -145,47 +145,7 @@ example can be found in `tiles/tile_example.json`[[view]](tiles/tile_example.jso
         {
             "tile_edge": {
                 "is_open": true,
-                "name": "a",
-                "edge_tag": [
-                    {
-                        "tag_position": "0",
-                        "tag_value": "i"
-                    },
-                    {
-                        "tag_position": "1",
-                        "tag_value": "h"
-                    },
-                    {
-                        "tag_position": "2",
-                        "tag_value": "g"
-                    }
-                ]
-            }
-        },
-        {
-            "tile_edge": {
-                "is_open": true,
-                "name": "a",
-                "edge_tag": [
-                    {
-                        "tag_position": "0",
-                        "tag_value": "f"
-                    },
-                    {
-                        "tag_position": "1",
-                        "tag_value": "e"
-                    },
-                    {
-                        "tag_position": "2",
-                        "tag_value": "d"
-                    }
-                ]
-            }
-        },
-        {
-            "tile_edge": {
-                "is_open": true,
-                "name": "a",
+                "name": "left_edge",
                 "edge_tag": [
                     {
                         "tag_position": "0",
