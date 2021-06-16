@@ -6,7 +6,7 @@ pub struct TagPosition {
     pub tag_value: String,
 }
 
-/// holds a is_open: bool, and an edge_tag: Vec\<TagPosition>
+/// holds a `is_open: bool`, and an `edge_tag: Vec<TagPosition>`
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct EdgeValue {
     /// checks whether or not a side is open for linking
@@ -36,7 +36,6 @@ pub struct Tile {
 ///  new "tile_id" value based on the tile field information. EXAMPLE:
 ///  identify_tile(tile) -> tile (it now has a tile_id)
 pub fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>> {
-    println!("identifying tile...");
 
     // this vec stores the string that we mutate `tile.tile_id` with
     let mut id_vec: Vec<char> = Vec::new();
@@ -89,9 +88,8 @@ pub mod generate {
         println!("number of sides:");
         stdin().read_line(&mut side_input).expect("nope. bad string. don't like it.");
 
-        println!("typed {}",side_input);
-
         
+
     }
 
     pub fn triangle() {
