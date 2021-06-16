@@ -1,4 +1,8 @@
+# added bu Cargo (don't push prebuilts to source)
 /target
+
+# added by blake - cargo auto-gens these.
 Cargo.lock
-./*.code-workspace
-pantsemm_rs.code-workspace
+
+## Workspace Ignores (ignore all .code-workspace files)
+*.code-workspace
