@@ -92,6 +92,7 @@ pub mod generate {
 
     }
 
+    /*
     pub fn triangle() {
         unimplemented!();
     }
@@ -115,5 +116,6 @@ pub mod generate {
     pub fn octagon() {
         unimplemented!();
     }
+    */
 
 }
