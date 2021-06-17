@@ -9,7 +9,7 @@ homepage = "https://github.com/parkcitymedia/ute"
 documentation = "https://github.com/parkcitymedia/ute"
 repository = "https://github.com/parkcitymedia/ute"
 readme = "README.md"
-keywords = ["ute","tile","shape","hexagon","map","generator","tilemap","map library"]
+keywords = ["ute","tile","shape","hexagon","map","generator","tilemap","library"]
 
 
 [lib]
