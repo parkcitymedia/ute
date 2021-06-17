@@ -180,4 +180,3 @@ here's an example quad/square to look at right now: `quad_example.json`
 - [The Cargo Book: Specifying Dependencies](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
 - [Rust Forum: how to get user input](https://users.rust-lang.org/t/how-to-get-user-input/5176)
 - [GitHub: serde_rs/serde issue #1441](https://github.com/serde-rs/serde/issues/1441)
-  - serde_rs/serde#1441
