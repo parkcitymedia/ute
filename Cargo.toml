@@ -11,7 +11,6 @@ repository = "https://github.com/parkcitymedia/ute"
 readme = "README.md"
 keywords = ["ute","tile","shape","generator","tilemap"]
 
-
 [lib]
 name = "ute"
 path = "src/lib.rs"
