@@ -22,7 +22,6 @@ this page is a brief how-to-use overview. for detailed examples and faqs, read t
  <sub>[[top]](#navigation)</sub>
 
 - add this repo* to your `Cargo.toml`:
-  - github "main" branch:
 ```toml
 [dependencies]
 
