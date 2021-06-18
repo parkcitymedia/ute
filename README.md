@@ -28,7 +28,7 @@ this page is a brief how-to-use overview. for detailed examples and faqs, read t
 # ... other deps are probably here ...
 
 # use this dep to utilize mostly stable
-# features on the github "stable" branch
+# features on the "stable" github branch
 ute = {git = "https://github.com/parkcitymedia/ute", branch="stable"}
 
 # or, if you're feeling adventurous, the
