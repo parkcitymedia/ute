@@ -22,12 +22,23 @@ this page is a brief how-to-use overview. for detailed examples and faqs, read t
  <sub>[[top]](#navigation)</sub>
 
 - add this repo* to your `Cargo.toml`:
+  - github "main" branch:
 ```toml
 [dependencies]
 
 # ... other deps are probably here ...
 
-ute = {git = "https://github.com/parkcitymedia/ute", branch="main"}
+# use this dep to utilize mostly stable
+# features on the github "stable" branch
+ute = {git = "https://github.com/parkcitymedia/ute", branch="stable"}
+
+# or, if you're feeling adventurous, the
+# "next" branch could be to your liking. not
+# heavily vetted by any means, so take caution
+ute = {git = "https://github.com/parkcitymedia/ute", branch="next"}
+
+# or, instead, use this for crates.io v0.1.x
+ute = {version = "0.1"}
 ```
 <sub>*cargo searches by default for a "master" branch, so branch specification may/may not be necessary. </sub>
 

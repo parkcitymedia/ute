@@ -10,6 +10,7 @@ pub struct TagPosition {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct EdgeValue {
     /// checks whether or not a side is open for linking
+    /// (useful in pathfinding or maze creation)
     pub is_open: bool,
     /// a vector of TagPosition{}s
     pub edge_tag: Vec<TagPosition>,
@@ -17,6 +18,7 @@ pub struct EdgeValue {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Edge {
+    /// holds an `is_open
     pub tile_edge: EdgeValue,
 }
 
@@ -86,7 +88,7 @@ pub mod generate {
     pub fn custom_polygon() {
         let mut side_input: String = String::new();
         println!("number of sides:");
-        stdin().read_line(&mut side_input).expect("nope. bad string. don't like it.");
+        stdin().read_line(&mut side_input).expect("unicode is pretty diverse so you have to have entered in something REALLY out-of-context here.");
 
         
 
