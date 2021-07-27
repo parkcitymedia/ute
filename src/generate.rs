@@ -1,9 +1,5 @@
 use std::io::{stdin,stdout,Write};
 
-// include main in this so we
-// can borrow stuff like tile
-/// structure and whatnot
-mod lib;
 /*
 /// generate a polygon of n (`side_input`) sides
 pub fn custom_polygon() {
@@ -19,8 +15,8 @@ pub fn custom_polygon() {
 /// # generate::triangle()
 /// outputs a ute-style json "triangle"
 /// polygon.
-pub fn triangle() {
-    unimplemented!();
+pub fn triangle() -> String {
+    return String::from("triangle");
 }
 
 pub fn quadagon() {
