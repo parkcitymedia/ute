@@ -1,6 +1,6 @@
 # UTE <Sub><i>( yoot )</i></sub>
 
-ute - engine for matching and manipulating n-sided polygons with tagged sides (in rust)
+ute - library for matching and manipulating n-sided polygons with tagged sides (in rust)
 
 ## navigation
  <sub>[[you're here]](#navigation)</sub>
