@@ -27,7 +27,7 @@ pub struct Edge {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Tile {
     /// Retrieved with global function identify_tile()
-    pub tile_id: String,
+    pub tile_id: Option<String>,
     /// center value of a tile
     pub tile_center: String,
     /// Vec\<Edge>
@@ -74,7 +74,7 @@ pub fn identify_tile(tile: &mut Tile) -> Result<Tile, Box<dyn std::error::Error>
     // result out the new tile (now with id, $2.99
     // call now for your free consultation!)
     let tile_id_string: String = id_vec.into_iter().collect();
-    tile.tile_id = tile_id_string;
+    tile.tile_id = Some(tile_id_string);
 
     Ok(tile.clone())
 }

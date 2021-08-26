@@ -1,5 +1,7 @@
 use std::io::{stdin,stdout,Write};
 
+use crate::{Tile};
+
 /*
 /// generate a polygon of n (`side_input`) sides
 pub fn custom_polygon() {
@@ -12,28 +14,42 @@ pub fn custom_polygon() {
 }
 */
 
-/// # generate::triangle()
+/// ### triangle()
+/// ```rust
+/// // example:
+/// let my_triangle: ute::Tile = generate::triangle();
+/// ```
 /// outputs a ute-style json "triangle"
 /// polygon.
-pub fn triangle() -> String {
-    return String::from("triangle");
+pub fn gen_triangle() -> Tile {
+    let mut tri_tile = Tile{
+        tile_center: String::from(""),
+        tile_id: Some(String::from("")),
+        tile_edges:Vec::new()
+    };
+    tri_tile
 }
 
-pub fn quadagon() {
+pub fn gen_quadagon() -> Tile {
+    unimplemented!()
 }
 
-pub fn pentagon() {
+pub fn gen_pentagon() -> Tile {
     unimplemented!();
 }
 
-pub fn hexagon() {
+pub fn gen_hexagon() -> Tile {
     unimplemented!();
 }
 
-pub fn septagon() {
+pub fn gen_septagon() -> Tile {
     unimplemented!();
 }
 
-pub fn octagon() {
+pub fn gen_octagon() -> Tile {
+    unimplemented!();
+}
+
+pub fn gen_cutsom() -> Tile {
     unimplemented!();
 }
